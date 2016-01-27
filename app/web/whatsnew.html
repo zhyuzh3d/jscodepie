@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jscodepie</title>
+</head>
+
+<body>
+    <style>
+        li {
+            margin: 0.5em;
+        }
+
+        ol {
+            font-size: 0.6em;
+            color: #666;
+        }
+
+        ul {
+            font-size: 1.5em;
+        }
+    </style>
+
+    <!--    待处理问题-->
+    <ul style="background-color:#DDD;padding:1em;padding-left:36px;padding-right:36px;font-size:1em">
+        <li>服务端统一的日志记录文件，每天记录一个</li>
+        <li>服务端对web文件进行缓存，避免每次读取</li>
+        <li>服务端对Etag缓存检测，避免重复请求</li>
+        <li>服务端动态api从httpApis文件夹自动读取</li>
+    </ul>
+
+
+    <!--    更新日志列表-->
+    <ul>
+
+
+
+        <li>2016.01.27
+            <ol>
+                <li>cfg模块存储全站的基本设置</li>
+                <li>secretCfg模块存储全站密码等重要信息，不能上传到github</li>
+                <li>main.js入口函数</li>
+                <li>myMdules文件夹存储所有主要模块</li>
+                <li>app模块用来启动网络服务，可以被其他module引用</li>
+                <li>httpHandler模块处理所有getpost请求，已经可以直接处理静态文件（相对于web目录）</li>
+                <li>mime模块只是mime文件类型的json对象</li>
+                <li>web文件夹用于存放所有静态文件</li>
+            </ol>
+        </li>
+
+
+
+    </ul>
+</body>
+
+</html>
