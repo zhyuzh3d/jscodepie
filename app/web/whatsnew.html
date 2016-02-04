@@ -24,8 +24,6 @@
     <!--    待处理问题-->
     <ul style="background-color:#DDD;padding:1em;padding-left:36px;padding-right:36px;font-size:1em">
         <li>服务端统一的日志记录文件，每天记录一个</li>
-        <li>服务端对web文件进行缓存，避免每次读取</li>
-        <li>服务端对Etag缓存检测，避免重复请求</li>
         <li>服务端动态api从httpApis文件夹自动读取</li>
     </ul>
 
@@ -38,6 +36,8 @@
                 <li>lib整合所有的require外部模块，其他模块只加载lib从而获得其他模块；这样可以单独刷新某个模块</li>
                 <li>httphandler调整，使用fileCahces缓存被访问过的文件，根据etag匹配304，200</li>
                 <li>httphandler载入文件的时候增加自动监听watch机制，自动刷新fileCaches</li>
+                <li>logr增加自动日志，每天新建日志文件，log输出和写日志，logf只写不输出,logc只输出不写文件</li>
+                <li>httpHandler自动记录每个请求信息到web日志</li>
                 <li></li>
             </ol>
         </li>

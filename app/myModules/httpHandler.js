@@ -1,7 +1,9 @@
 /*将http接口动态请求分发到httpApis文件夹注册的所有接口函数
 将静态/web请求直接处理返回
 */
-var lib = require('./lib.js');
+var lib = require('./lib.js').reload();
+var log = lib.logr.log;
+var logf = lib.logr.logf;
 var mod = {};
 
 mod.apis = {};
@@ -17,8 +19,14 @@ function handlerFn(req, resp, next) {
     var urlobj = lib.url.parse(req.url);
     var urlpath = urlobj.pathname;
 
-    console.log('\n>>get http req-------', req.url);
+    //写入日志
+    var logobj = {
+        url: req.url,
+        ip: req.headers['x-forwarded-for'] || req.connection.remoteAddress,
+    };
+    logf([undefined, undefined, logobj], 'web');
 
+    //处理接口
     if (urlpath.indexOf('/api/') == 0) {
         //动态Api接口
         var apifn = mod.apis[urlpath];
@@ -26,7 +34,7 @@ function handlerFn(req, resp, next) {
             try {
                 apifn(urlobj, req, resp, next);
             } catch (err) {
-                console.log('>app.httpHandler ERR', req.url);
+                log(['httpHandler.handlerFn', 'Catch apifn err' + urlpath, err]);
             };
         } else {
             send404(resp);
@@ -126,7 +134,7 @@ function loadFile(fpath) {
                 fobj.etag = lib.hash.createHash('sha1').update(fobj.data).digest('base64');
                 break;
             default:
-                console.log('>>event', event);
+                log(['httpHandler.loadFile', 'Watch failed:' + fpath, event]);
                 break;
             };
         })
