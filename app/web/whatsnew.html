@@ -33,6 +33,14 @@
     <!--    更新日志列表-->
     <ul>
 
+        <li>2016.02.04
+            <ol>
+                <li>lib整合所有的require外部模块，其他模块只加载lib从而获得其他模块；这样可以单独刷新某个模块</li>
+                <li>httphandler调整，使用fileCahces缓存被访问过的文件，根据etag匹配304，200</li>
+                <li>httphandler载入文件的时候增加自动监听watch机制，自动刷新fileCaches</li>
+                <li></li>
+            </ol>
+        </li>
 
 
         <li>2016.01.27
