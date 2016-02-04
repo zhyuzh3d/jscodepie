@@ -34,7 +34,5 @@ mod.str2json = function (str) {
 
 
 
-
-
 /*导出*/
 module.exports = mod;

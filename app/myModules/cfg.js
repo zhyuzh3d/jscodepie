@@ -13,5 +13,9 @@ setInterval(function () {
     mod.a += 1;
 }, 1000);
 
+
+
+
+
 /*导出*/
 module.exports = mod;

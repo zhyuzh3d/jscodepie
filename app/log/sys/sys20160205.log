@@ -1,0 +1,309 @@
+{"time":"2016-02-04T16:04:16.061Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:04:27.351Z","code":"httpHandler.loadFile","text":"Watch failed:jj.js","data":"rename"};&
+&{"time":"2016-02-04T16:05:02.557Z","code":"httpHandler.loadFile","text":"Watch failed:jj.js","data":"rename"};&
+&{"time":"2016-02-04T16:05:35.351Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:08:13.106Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:08:49.812Z","code":"lib.reload","text":"Module reload","data":"cfg.js"};&
+&{"time":"2016-02-04T16:09:48.535Z","code":"lib.reload","text":"Module reload","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:10:38.372Z","code":"lib.reload","text":"Module reload","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:13:54.016Z","code":"lib.reload","text":"Module reload","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:14:23.197Z","code":"lib.reload","text":"Module reload","data":"lib.js"};&
+&{"time":"2016-02-04T16:14:26.510Z","code":"lib.reload","text":"Module reload","data":"lib.js"};&
+&{"time":"2016-02-04T16:14:28.532Z","code":"lib.reload","text":"Module reload","data":"lib.js"};&
+&{"time":"2016-02-04T16:15:04.127Z","code":"lib.reload","text":"Module reload","data":"lib.js"};&
+&{"time":"2016-02-04T16:15:45.768Z","code":"lib.reload","text":"Module reload","data":"lib.js"};&
+&{"time":"2016-02-04T16:15:52.023Z","code":"lib.reload","text":"Module reload","data":"lib.js"};&
+&{"time":"2016-02-04T16:15:54.263Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:16:12.257Z","code":"lib.reload","text":"Module reload","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:16:33.933Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:16:43.820Z","code":"lib.reload","text":"Module reload","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:17:00.272Z","code":"lib.reload","text":"Module reload","data":"lib.js"};&
+&{"time":"2016-02-04T16:17:03.713Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:17:26.886Z","code":"lib.reload","text":"Module reload","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:17:59.601Z","code":"lib.reload","text":"Module reload","data":"lib.js"};&
+&{"time":"2016-02-04T16:18:02.001Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:18:10.700Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:18:48.271Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:18:58.169Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:19:08.864Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:21:32.946Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:21:39.945Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:21:44.684Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:21:51.537Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:21:51.539Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:21:58.879Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:21:58.879Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:23:44.015Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:23:44.015Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:23:47.144Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:24:00.744Z","code":"/lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:24:00.746Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:28:13.036Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:28:18.965Z","code":"/lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:28:18.965Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:28:40.265Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:28:48.953Z","code":"/lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:28:48.955Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:29:15.956Z","code":"/lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:29:15.956Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:29:39.322Z","code":"/lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:29:39.323Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:29:47.021Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:29:47.021Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:30:41.618Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:30:41.618Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:30:42.990Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:30:42.990Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:30:45.466Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:30:50.915Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:30:50.916Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:31:08.916Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:31:08.917Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:31:11.454Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:31:21.036Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:31:21.037Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:31:43.883Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:31:43.884Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:31:47.068Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:31:52.931Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:31:52.932Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:32:13.496Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:32:13.497Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:32:16.756Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:32:23.325Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:32:23.327Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:33:47.562Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:33:47.562Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:33:50.654Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:33:58.006Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:33:58.007Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:35:10.485Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:35:10.486Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:35:32.079Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:35:32.079Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:35:34.378Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:35:59.264Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:36:15.955Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:36:15.956Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:37:19.019Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:37:19.032Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:37:24.636Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:37:56.275Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:38:00.655Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:38:00.657Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:38:36.451Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:38:36.451Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:38:48.734Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:40:24.451Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:41:08.013Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:41:31.401Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:42:32.156Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:43:25.955Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:43:32.161Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:43:32.162Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:44:11.707Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:44:11.708Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:44:17.263Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:44:24.668Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:44:24.669Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:44:45.013Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:44:45.013Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:44:51.747Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:44:51.747Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:45:15.704Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:45:15.706Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:45:17.321Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:45:17.321Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:45:20.548Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:45:26.536Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:45:26.537Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:45:42.514Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:45:42.515Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:45:44.956Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:45:51.128Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:45:51.129Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:46:17.145Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:46:17.146Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:46:17.938Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:46:17.938Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:46:20.097Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:46:27.178Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:46:27.179Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:46:51.689Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:46:51.690Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:46:52.824Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:46:52.825Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:46:55.132Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:47:00.933Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:47:00.934Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:47:26.266Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:47:26.267Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:47:27.453Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:47:27.454Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:47:29.604Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:47:33.540Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:47:33.541Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:48:04.051Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:48:04.052Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:48:06.403Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:48:06.403Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:48:14.657Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:48:14.657Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:48:17.757Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:48:23.204Z","code":"/lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:48:23.205Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:48:42.735Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:48:42.736Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:49:10.308Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:49:10.308Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:49:29.043Z","code":"/lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:49:29.043Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:49:32.677Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:50:25.387Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T16:50:36.528Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:51:39.861Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:51:43.176Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:52:52.293Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:52:54.520Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:52:56.846Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:53:01.680Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T16:53:46.203Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:54:08.926Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T16:54:11.055Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:55:04.149Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:56:54.802Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:57:31.449Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:58:41.712Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T16:59:31.684Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:00:00.036Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:00:17.965Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:00:21.980Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T17:00:42.933Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:01:01.550Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T17:01:06.096Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T17:01:41.947Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T17:02:05.124Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:02:17.681Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T17:02:24.483Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:02:31.690Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T17:02:43.801Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T17:02:55.658Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T17:05:12.992Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T17:05:20.438Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T17:06:28.800Z","code":"lib.reload","text":"Module reload on change","data":"lib.js"};&
+&{"time":"2016-02-04T17:06:31.289Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:06:40.592Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T17:06:46.195Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T17:06:49.035Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T17:08:49.550Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T17:08:50.695Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T17:08:53.101Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:10:32.799Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T17:10:34.110Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T17:10:37.250Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:10:41.581Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T17:10:43.798Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:11:04.500Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:11:10.436Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:11:29.468Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T17:11:54.740Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:12:26.301Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:13:40.551Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:14:25.944Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:15:31.212Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:15:41.951Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:20:00.205Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:20:15.933Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:20:42.205Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:20:52.277Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:21:03.154Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:21:11.413Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:25:07.202Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:25:18.319Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:25:25.669Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:25:53.954Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:26:04.826Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:26:06.431Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:26:08.602Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:26:11.020Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:27:04.034Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:27:05.115Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:27:07.206Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:27:14.363Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:27:39.546Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:27:40.839Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:27:48.389Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:27:57.296Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:28:30.579Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:28:57.057Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:29:03.747Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:29:06.107Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:29:38.051Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:29:44.253Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:29:51.397Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:30:00.011Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:30:06.811Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:30:16.082Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:30:17.642Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:31:58.734Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:32:05.356Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:32:32.959Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:32:36.784Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:32:43.154Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:33:29.740Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:33:31.061Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:33:48.177Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:33:59.907Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:34:06.388Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:34:17.087Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:34:21.118Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:36:17.599Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:36:43.927Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:38:22.344Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:38:47.649Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:38:53.053Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:38:59.589Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:39:28.682Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T17:41:31.738Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:42:30.916Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:49:05.867Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:52:16.695Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:55:36.635Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:56:51.034Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:57:22.857Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:59:16.705Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T17:59:32.060Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T18:00:05.010Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T18:00:13.387Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:00:29.106Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:00:32.703Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:00:35.914Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:05:45.973Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:06:27.319Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:07:41.190Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T18:08:06.652Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T18:08:15.815Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:08:23.568Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:09:00.259Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:09:19.873Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:10:03.445Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:10:17.693Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:10:23.809Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:10:47.022Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:10:49.854Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T18:11:01.457Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:11:14.819Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:11:24.209Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:11:46.293Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:11:57.968Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:12:11.391Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:12:12.732Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:12:15.905Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T18:12:23.777Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:12:27.931Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:12:37.357Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:14:05.788Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:16:39.671Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:16:46.238Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:21:29.463Z","code":"lib.reload","text":"Module reload on change","data":"fns.js"};&
+&

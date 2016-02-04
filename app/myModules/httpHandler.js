@@ -2,20 +2,23 @@
 将静态/web请求直接处理返回
 */
 var lib = require('./lib.js').reload();
-var log = lib.logr.log;
-var logf = lib.logr.logf;
 var mod = {};
 
 mod.apis = {};
 mod.name = 'httpHandler';
 
+/*每次模块更新都刷新app的控制函数*/
+function updateSvr() {
+    if (require('./app.js').svr) {
+        require('./app.js').svr._events.request = handlerFn;
+    };
+};
+updateSvr();
+
 /*所有http请求的接口控制器,分发到app.httpApis[urlobj.pathname]*/
 mod.handler = handlerFn;
 
-
 function handlerFn(req, resp, next) {
-    if (!lib) lib = require('./lib.js');
-
     var urlobj = lib.url.parse(req.url);
     var urlpath = urlobj.pathname;
 
@@ -24,7 +27,7 @@ function handlerFn(req, resp, next) {
         url: req.url,
         ip: req.headers['x-forwarded-for'] || req.connection.remoteAddress,
     };
-    logf([undefined, undefined, logobj], 'web');
+    lib.logr.logf([undefined, undefined, logobj], 'web');
 
     //处理接口
     if (urlpath.indexOf('/api/') == 0) {
@@ -34,7 +37,7 @@ function handlerFn(req, resp, next) {
             try {
                 apifn(urlobj, req, resp, next);
             } catch (err) {
-                log(['httpHandler.handlerFn', 'Catch apifn err' + urlpath, err]);
+                lib.logr.log(['httpHandler.handlerFn', 'Catch apifn err' + urlpath, err]);
             };
         } else {
             send404(resp);
@@ -134,16 +137,13 @@ function loadFile(fpath) {
                 fobj.etag = lib.hash.createHash('sha1').update(fobj.data).digest('base64');
                 break;
             default:
-                log(['httpHandler.loadFile', 'Watch failed:' + fpath, event]);
+                lib.logr.log(['httpHandler.loadFile', 'Watch failed:' + fpath, event]);
                 break;
             };
         })
     };
     return fobj;
 };
-
-
-
 
 
 /*导出*/

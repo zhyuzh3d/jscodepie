@@ -23,13 +23,22 @@
 
     <!--    待处理问题-->
     <ul style="background-color:#DDD;padding:1em;padding-left:36px;padding-right:36px;font-size:1em">
-        <li>服务端统一的日志记录文件，每天记录一个</li>
         <li>服务端动态api从httpApis文件夹自动读取</li>
     </ul>
 
 
     <!--    更新日志列表-->
     <ul>
+
+        <li>2016.02.05
+            <ol>
+                <li>lib加入自动重载js模块功能，仅watch重载modules第一层目录，子层留给特定模块单独watch</li>
+                <li>lib.js不会被重载，app.js需要谨慎防止端口重复导致出错</li>
+                <li>要仅可能控制模块之间的直接依赖。对于一般引用是没有问题的</li>
+                <li></li>
+            </ol>
+        </li>
+
 
         <li>2016.02.04
             <ol>

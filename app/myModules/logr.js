@@ -85,5 +85,9 @@ mod.log = function (msg, logfname) {
     console.log(logfname.toUpperCase(), lib.moment().format('HH:mm:ss'), ms.code, '>', ms.text, ms.data);
 };
 
+
+
+
+
 /*导出*/
 module.exports = mod;
