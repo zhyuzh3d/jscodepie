@@ -7,11 +7,13 @@ mod.cfg = {}; //需要累计存储的数据，存入redis数据库
 mod.init = initFn;
 
 function initFn(nextfn) {
-    mod.cli = lib.redis.createClient(6379, 'localhost', {});
-    mod.cli.auth('zhyuzh3DsRedis', function (err, dat) {
+    mod.cli = lib.redis.createClient(lib.cfg.rdsPort, lib.cfg.rdsHost, {});
+    mod.cli.auth(lib.xcfg.rdsPw, function (err, dat) {
         if (!err) {
-            initCfg(function () {
-                readCfgFn(nextfn);
+            readCfgFn(function () {
+                initCfg(function () {
+                    if (nextfn) nextfn()
+                });
             });
         } else {
             lib.logr.log(['rds.init', 'Auth failed']);
@@ -23,8 +25,19 @@ function initFn(nextfn) {
 /*初始化config key*/
 function initCfg(resfn) {
     var mult = mod.cli.multi();
-    if (!mod.cfg['autoUsrId']) mult.hset('_config', 'autoUsrId', 0);
+    if (!mod.cfg) mod.cfg = {};
+    //所有需要设置的参数，如果read读取成功会被自动忽略
+    var fileds = {
+        'autoUsrId': 10000, //访客的自增id，从10000开始
+    };
 
+    //把所有fiels属性写入cfg同时写入redis数据库
+    for (var attr in fileds) {
+        if (!mod.cfg[attr]) {
+            mod.cfg[attr] = fileds[attr];
+            mult.hset('_config', attr, fileds[attr]);
+        };
+    };
     mult.exec(function (err, dat) {
         if (resfn) {
             resfn(err, dat)
@@ -105,7 +118,7 @@ function hashArr2ObjFn(arr) {
         obj[arr[i]] = arr[i + 1];
     };
     return obj;
-}
+};
 
 
 

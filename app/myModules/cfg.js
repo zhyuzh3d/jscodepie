@@ -8,12 +8,9 @@ mod.name = 'cfg';
 mod.svrPort = 8081; //http服务器端口
 mod.webCacheSec = 3600 * 24 * 7; //etag页面缓存期限
 
-mod.a = 0;
-setInterval(function () {
-    mod.a += 1;
-}, 1000);
-
-
+/*redis相关设置*/
+mod.rdsPort = 6379;
+mod.rdsHost = 'localhost';
 
 
 

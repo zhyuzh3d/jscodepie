@@ -3,13 +3,13 @@
 var lib = require('./lib.js').init();
 var mod = {};
 
-mod.svr = lib.http.createServer(lib.httpHandler.handler);
-mod.sktio = lib.socketio(mod.svr);
 
 /*初始化服务*/
 mod.init = initFn;
 
 function initFn(nextfn) {
+    mod.sktio = lib.socketio(mod.svr);
+    mod.svr = lib.http.createServer(lib.httpHandler.handler);
     lib.rds.init(function () {
         startServerFn();
         if (nextfn) nextfn();

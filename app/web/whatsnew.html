@@ -31,6 +31,15 @@
     <!--    更新日志列表-->
     <ul>
 
+        <li>2016.02.12b
+            <ol>
+                <li>lib.reloadModule改进，可以载入其他路径的函数</li>
+                <li>lib的watch机制改进，移到main启动，避免重复watch</li>
+                <li>xcfg密匙设置，在lib中watch并重载</li>
+                <li></li>
+            </ol>
+        </li>
+
         <li>2016.02.12
             <ol>
                 <li>httphander梳理索引handler函数都传递(req,resp,nextfn)，中间过程的变量存入req或者resp，如req.urlObj,req.webUrl，cookie或header中间过程直接写入（不是留到最后一起写入对象）</li>

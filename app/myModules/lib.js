@@ -7,10 +7,17 @@ var myModules; //所有modules文件夹下的自定义模块；
 
 /*重载模块*/
 mod.init = initFn;
+mod.watchs = {
+    paths: [],
+    fns: {},
+};
 
 function initFn(nextfn) {
     if (!mod.isReady) {
         mod.isReady = true;
+
+        //外部的密匙设置文件
+        mod.xcfg = require("../../xcfg.js");
 
         //基础模块和第三方模块
         mod.http = require('http');
@@ -29,8 +36,19 @@ function initFn(nextfn) {
             mod[attr] = require('./' + fpath);
         };
 
-        //监听modules文件夹下新增文件并加载新文件
-        mod.fs.watch('./myModules/', function (event, fname) {
+
+        //监听xcfg文件变动
+        mod.watchs.paths.push('../xcfg.js');
+        mod.watchs.fns['../xcfg.js'] = function (event, fname) {
+            reloadModule(fname, '../', '../../');
+            console.log('>>>lib xcfg', mod.xcfg);
+        };
+
+
+
+        //监听modules下所有模块文件变动
+        mod.watchs.paths.push('./myModules/');
+        mod.watchs.fns['./myModules/'] = function (event, fname) {
             switch (event) {
             case 'change':
                 //文件变化，重载这个模块
@@ -48,20 +66,34 @@ function initFn(nextfn) {
                 };
                 break;
             };
-        });
+        };
     };
     return mod;
 };
 
 
+
 /*自动重载一个模块*/
-function reloadModule(fname) {
-    var fullpath = mod.path.resolve() + '/myModules/' + fname;
+function reloadModule(fname, relpath, prepath) {
+    //获取require.cache的路径
+    var fullpath;
+    if (!relpath) {
+        fullpath = mod.path.resolve() + '/myModules/' + fname;
+    } else {
+        fullpath = mod.path.resolve(relpath) + '/' + fname;
+    };
+
     var basename = mod.path.basename(fname, '.js');
     myModules[basename] = fname; //向mymodules增加新的对象或更新
     delete require.cache[fullpath];
+
+    //重新载入模块
     try {
-        mod[basename] = require('./' + fname);
+        if (!prepath) {
+            mod[basename] = require('./' + fname);
+        } else {
+            mod[basename] = require(prepath + fname);
+        }
         mod.logr.log(['lib.reloadModule', 'Module reload ok:' + fname, 'OK']);
     } catch (err) {
         mod.logr.log(['lib.reloadModule', 'Module reload err:' + fname, err]);
@@ -71,7 +103,6 @@ function reloadModule(fname) {
         mod[basename].init();
     }
 };
-
 
 
 /*获取所有自定义模块js文件名*/

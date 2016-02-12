@@ -53,12 +53,14 @@ function createTmpUsrFn(resfn) {
     };
     mult.exec(function (err, dat) {
         if (!err) {
+            console.log('>>>usr', usr);
             if (resfn) resfn(usr);
         } else {
             lib.logr.log(['usr.createTmpUsr', 'redis write failed', err])
         };
     });
 };
+
 
 
 
