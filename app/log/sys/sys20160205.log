@@ -306,4 +306,15 @@
 &{"time":"2016-02-04T18:16:39.671Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
 &{"time":"2016-02-04T18:16:46.238Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
 &{"time":"2016-02-04T18:21:29.463Z","code":"lib.reload","text":"Module reload on change","data":"fns.js"};&
+&{"time":"2016-02-04T18:25:11.592Z","code":"lib.reload","text":"Module reload on change","data":"app.js"};&
+&{"time":"2016-02-04T18:25:11.644Z","code":"lib.reload","text":"Module reload on change","data":"cfg.js"};&
+&{"time":"2016-02-04T18:25:11.702Z","code":"lib.reload","text":"Module reload on change","data":"fns.js"};&
+&{"time":"2016-02-04T18:25:11.801Z","code":"lib.reload","text":"Module reload on change","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:25:12.067Z","code":"lib.reload","text":"Module reload on change","data":"logr.js"};&
+&{"time":"2016-02-04T18:30:52.878Z","code":"app.startSever","text":"Server starting..."};&
+&{"time":"2016-02-04T18:31:02.827Z","code":"lib.reload","text":"Module reload","data":"logr.js"};&
+&{"time":"2016-02-04T18:31:06.066Z","code":"lib.reload","text":"Module reload","data":"logr.js"};&
+&{"time":"2016-02-04T18:31:25.742Z","code":"lib.reload","text":"Module reload","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:31:32.555Z","code":"lib.reload","text":"Module reload","data":"httpHandler.js"};&
+&{"time":"2016-02-04T18:31:37.845Z","code":"lib.reload","text":"Module reload","data":"httpHandler.js"};&
 &

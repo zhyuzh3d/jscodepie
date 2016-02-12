@@ -24,11 +24,22 @@
     <!--    待处理问题-->
     <ul style="background-color:#DDD;padding:1em;padding-left:36px;padding-right:36px;font-size:1em">
         <li>服务端动态api从httpApis文件夹自动读取</li>
+        <li>私密设置应移到外部同时watch</li>
     </ul>
 
 
     <!--    更新日志列表-->
     <ul>
+
+        <li>2016.02.12
+            <ol>
+                <li>httphander梳理索引handler函数都传递(req,resp,nextfn)，中间过程的变量存入req或者resp，如req.urlObj,req.webUrl，cookie或header中间过程直接写入（不是留到最后一起写入对象）</li>
+                <li>fns增加addCookie函数，向resp增加一个kvstr。原有set-Cookie方法不是新增而是替换所有cookie</li>
+                <li>增加rds.js模块，配置和连接redis数据库，相关的参数设置存储在_config键内</li>
+                <li>增加usr.js模块，自动为访客创建用户并把token写入resp的cookie；用户rds的key格式u＋id如u123,token纯随机md5</li>
+                <li></li>
+            </ol>
+        </li>
 
         <li>2016.02.05
             <ol>

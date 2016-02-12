@@ -1,5 +1,5 @@
 /*公开的设置参数，可被外部访问*/
-var lib = require('./lib.js').reload();
+var lib = require('./lib.js').init();
 var mod = {};
 var app;
 mod.name = 'cfg';

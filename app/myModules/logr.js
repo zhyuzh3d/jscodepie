@@ -1,5 +1,5 @@
 /*处理所有日志，输出和记入文件，自动新建文件*/
-var lib = require('./lib.js').reload();
+var lib = require('./lib.js').init();
 var mod = {};
 
 var logRootFolder = 'log';

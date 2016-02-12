@@ -1,7 +1,7 @@
 /*将http接口动态请求分发到httpApis文件夹注册的所有接口函数
 将静态/web请求直接处理返回
 */
-var lib = require('./lib.js').reload();
+var lib = require('./lib.js').init();
 var mod = {};
 
 mod.apis = {};
@@ -18,30 +18,28 @@ updateSvr();
 /*所有http请求的接口控制器,分发到app.httpApis[urlobj.pathname]*/
 mod.handler = handlerFn;
 
-function handlerFn(req, resp, next) {
-    var urlobj = lib.url.parse(req.url);
-    var urlpath = urlobj.pathname;
-
-    //写入日志
-    var logobj = {
-        url: req.url,
-        ip: req.headers['x-forwarded-for'] || req.connection.remoteAddress,
+function handlerFn(req, resp, nextfn) {
+    req.urlObj = lib.url.parse(req.url);
+    if (req.urlObj == undefined) {
+        send404(req,resp,nextfn);
+        if (nextfn) nextfn(req, resp);
+        return;
     };
-    lib.logr.logf([undefined, undefined, logobj], 'web');
 
     //处理接口
+    var urlpath = req.urlObj.pathname;
     if (urlpath.indexOf('/api/') == 0) {
         //动态Api接口
         var apifn = mod.apis[urlpath];
         if (apifn && apifn.constructor == Function) {
             try {
-                apifn(urlobj, req, resp, next);
+                apifn(req, resp, nextfn);
             } catch (err) {
                 lib.logr.log(['httpHandler.handlerFn', 'Catch apifn err' + urlpath, err]);
             };
         } else {
-            send404(resp);
-        }
+            send404(req, resp, nextfn);
+        };
     } else {
         //静态文件服务，对特殊目录重新定向
         switch (urlpath) {
@@ -55,15 +53,34 @@ function handlerFn(req, resp, next) {
             break;
         };
         urlpath = 'web' + urlpath; //静态文件都是相对于web的路径,这里的路径不受当前目录影响
-        mod.webHandler(urlpath, urlobj, req, resp, next);
-    }
+        req.webUrl = urlpath;
+
+        //如果是首页,那么使用用户账号控制
+        if (req.webUrl == 'web/index.html') {
+            lib.usr.setUsrHeader(req, resp, function () {
+                mod.webHandler(req, resp, nextfn);
+            });
+        } else {
+            mod.webHandler(req, resp, nextfn);
+        };
+    };
+
+    //写入日志
+    var logobj = {
+        url: req.url,
+        ip: req.headers['x-forwarded-for'] || req.connection.remoteAddress,
+    };
+    lib.logr.logf([undefined, undefined, logobj], 'web');
 };
 
 /*处理静态文件函数*/
 mod.webHandler = webHandlerFn;
 mod.fileCaches = {}; //全部web文件的缓存
 
-function webHandlerFn(fpath, urlobj, req, resp, next) {
+function webHandlerFn(req, resp, nextfn) {
+    var urlobj = req.urlObj;
+    var fpath = req.webUrl;
+
     var ext = lib.path.extname(fpath);
     var mimetype = lib.mime[ext];
 
@@ -78,42 +95,38 @@ function webHandlerFn(fpath, urlobj, req, resp, next) {
 
     //如果仍然失败返回404
     if (fobj == undefined) {
-        send404(resp);
+        send404(req, resp, nextfn);
         return;
     };
 
     //如果etag相同返回304，如果不同，返回200
     if (fobj.etag == ifnm) {
-        send304(resp);
+        send304(req, resp, nextfn);
     } else {
         var ifnm = req.headers['if-none-match'] || 0;
         //文件头写入Etag
-        var hd = {
-            'Content-Type': ext || 'text/plain',
-            'Etag': fobj.etag,
-            'Cache-Control': 'public,max-age=' + lib.cfg.webCacheSec,
-        };
-        send200(resp, hd, fobj.data);
+        resp.setHeader('Content-Type', ext || 'text/plain');
+        resp.setHeader('Etag', fobj.etag);
+        resp.setHeader('Cache-Control', 'public,max-age=' + lib.cfg.webCacheSec);
+        resp.writeHead(200);
+        resp.end(fobj.data);
+        if (nextfn) nextfn(req, resp);
     };
 };
 
-/*返回200*/
-function send200(resp, hd, data) {
-    resp.writeHead(200, hd);
-    resp.end(data);
-};
-
 /*返回304信息*/
-function send304(resp) {
+function send304(req, resp, nextfn) {
     resp.writeHead(304);
     resp.end();
+    if (nextfn) nextfn(req, resp);
 };
 
 /*返回404错误页面模版*/
-function send404(resp) {
+function send404(req, resp, nextfn) {
     var dat = lib.fs.readFileSync('web/404.html', 'utf-8');
     resp.writeHead(404, lib.mime['.html']);
     resp.end(dat);
+    if (nextfn) nextfn(req, resp);
 };
 
 /*把一个文件读取为缓存模版{path:'',data:'',head:{etag:'','Content-Type':'','Cache-Control':''}}
@@ -126,7 +139,7 @@ function loadFile(fpath) {
         fobj = {};
         fobj.path = fpath;
         fobj.data = lib.fs.readFileSync(fpath);
-        fobj.etag = lib.hash.createHash('sha1').update(fobj.data).digest('base64');
+        fobj.etag = lib.crypto.createHash('sha1').update(fobj.data).digest('base64');
 
         //自动监听文件改动，随时更新data和etag属性
         lib.fs.watch(fpath, function (event, fname) {
@@ -134,7 +147,7 @@ function loadFile(fpath) {
             switch (event) {
             case 'change':
                 fobj.data = lib.fs.readFileSync(fpath);
-                fobj.etag = lib.hash.createHash('sha1').update(fobj.data).digest('base64');
+                fobj.etag = lib.crypto.createHash('sha1').update(fobj.data).digest('base64');
                 break;
             default:
                 lib.logr.log(['httpHandler.loadFile', 'Watch failed:' + fpath, event]);

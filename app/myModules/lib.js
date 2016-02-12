@@ -3,9 +3,12 @@
 本页函数不会自动重载*/
 
 var mod = {};
-var myModules; //所有modules文件夹下的自定义模块（不包含lib.js)；
+var myModules; //所有modules文件夹下的自定义模块；
 
-mod.reload = function () {
+/*重载模块*/
+mod.init = initFn;
+
+function initFn(nextfn) {
     if (!mod.isReady) {
         mod.isReady = true;
 
@@ -15,8 +18,9 @@ mod.reload = function () {
         mod.url = require('url');
         mod.fs = require('fs');
         mod.path = require('path');
-        mod.hash = require('crypto');
+        mod.crypto = require('crypto');
         mod.moment = require('moment');
+        mod.redis = require("redis");
 
         //重载modules文件夹下的所有js文件模块
         myModules = getMyModules();
@@ -30,13 +34,7 @@ mod.reload = function () {
             switch (event) {
             case 'change':
                 //文件变化，重载这个模块
-                if (fname != 'lib.js') {
-                    var fullpath = mod.path.resolve() + '/myModules/' + fname;
-                    var basename = mod.path.basename(fname, '.js');
-                    delete require.cache[fullpath]; //清理require缓存需要使用绝对路径
-                    mod[basename] = require('./' + fname);
-                    mod.logr.log(['lib.reload', 'Module reload on change', fname]);
-                };
+                reloadModule(fname);
                 break;
             default:
                 //其他情况，不管发生什么都全面检查
@@ -45,12 +43,7 @@ mod.reload = function () {
                     if (!myModules[attr]) {
                         //新增文件
                         var filename = mds[attr];
-                        var fullpath = mod.path.resolve() + '/myModules/' + filename;
-                        var basename = mod.path.basename(filename, '.js');
-                        myModules[basename] = filename; //向mymodules增加新的对象
-                        delete require.cache[fullpath];
-                        mod[basename] = require('./' + filename);
-                        mod.logr.log(['lib.reload', 'Module reload', fname]);
+                        reloadModule(filename);
                     };
                 };
                 break;
@@ -59,6 +52,26 @@ mod.reload = function () {
     };
     return mod;
 };
+
+
+/*自动重载一个模块*/
+function reloadModule(fname) {
+    var fullpath = mod.path.resolve() + '/myModules/' + fname;
+    var basename = mod.path.basename(fname, '.js');
+    myModules[basename] = fname; //向mymodules增加新的对象或更新
+    delete require.cache[fullpath];
+    try {
+        mod[basename] = require('./' + fname);
+        mod.logr.log(['lib.reloadModule', 'Module reload ok:' + fname, 'OK']);
+    } catch (err) {
+        mod.logr.log(['lib.reloadModule', 'Module reload err:' + fname, err]);
+    };
+    if (mod[basename] && mod[basename].init) {
+        //如果需要，重新初始化
+        mod[basename].init();
+    }
+};
+
 
 
 /*获取所有自定义模块js文件名*/
@@ -72,13 +85,13 @@ function getMyModules() {
         //排除文件夹和lib.js
         if (!stat.isDirectory() && ext == '.js') {
             var fname = mod.path.basename(fpath, '.js');
-            if (fname != 'lib') {
-                res[fname] = file;
-            };
+            res[fname] = file;
         };
     });
     return res;
 };
+
+
 
 
 /*导出*/
